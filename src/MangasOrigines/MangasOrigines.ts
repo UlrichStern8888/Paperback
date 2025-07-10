@@ -11,6 +11,7 @@ import {
 
 const DOMAIN: string = 'https://mangas-origines.fr'
 
+
 export const MangasOriginesInfo: SourceInfo = {
     version: "2.2",
     language: "FR",

@@ -1,7 +1,7 @@
 {
-  "name": "moomooo95-extensions",
+  "name": "ulrichstern-extensions",
   "version": "1.0.0",
-  "repositoryName": "Moomooo95's Extensions",
+  "repositoryName": "UlrichStern's Extensions",
   "description": "Multiple french sources for Paperback 0.8",
   "scripts": {
     "bundle": "npx paperback bundle",
@@ -9,7 +9,7 @@
     "test": "npx paperback test",
     "nodemon": "nodemon"
   },
-  "author": "Moomooo95",
+  "author": "UlrichStern",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",

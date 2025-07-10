@@ -9,13 +9,13 @@ import {
     Madara
 } from '../templates/madara/base'
 
-const DOMAIN: string = 'https://mangas-origines.fr'
+const DOMAIN: string = 'https://hentai-origines.fr'
 
 
-export const MangasOriginesInfo: SourceInfo = {
+export const HentaiOriginesInfo: SourceInfo = {
     version: "2.2",
     language: "FR",
-    name: 'MangasOrigines',
+    name: 'HentaiOrigines',
     icon: 'icon.png',
     description: `Extension that pulls mangas from ${DOMAIN}`,
     author: 'Moomooo95',
@@ -31,9 +31,9 @@ export const MangasOriginesInfo: SourceInfo = {
     intents: SourceIntents.MANGA_CHAPTERS | SourceIntents.HOMEPAGE_SECTIONS | SourceIntents.CLOUDFLARE_BYPASS_REQUIRED
 }
 
-export class MangasOrigines extends Madara {
+export class HentaiOrigines extends Madara {
     base_url = DOMAIN
-    lang_code = MangasOriginesInfo.language!
+    lang_code = HentaiOriginesInfo.language!
     override source_path: string = "oeuvre"
     override alt_ajax: boolean = true
     override cloudflare_domain: boolean = false

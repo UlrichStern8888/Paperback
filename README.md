@@ -1,12 +1,12 @@
-## Moomooo95's Repo Extensions Paperback
+## UlrichStern's Repo Extensions Paperback
 
 ### Add this repository to the app
 
-On a Paperback installed device, press [Add to Paperback](paperback://addRepo?displayName=Moomooo95%27s%20Extensions&url=https%3A%2F%2Fmoomooo95.github.io%2Fextensions-french%2Fmaster) or use the [base URL](https://moomooo95.github.io/moomooo95-extensions/master) to add this repository to the app.
+On a Paperback installed device, press [base URL](https://ulrichstern8888.github.io/Paperback/main) to add this repository to the app.
 
 #### Base URL :
 ```
-https://moomooo95.github.io/extensions-french/master
+https://ulrichstern8888.github.io/Paperback/main
 ```
 
 ### List of sources in this repo

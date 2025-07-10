@@ -9,7 +9,6 @@ import {
     Madara
 } from '../templates/madara/base'
 
-
 const DOMAIN: string = 'https://mangas-origines.fr'
 
 export const MangasOriginesInfo: SourceInfo = {

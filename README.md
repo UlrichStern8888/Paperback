@@ -3,6 +3,7 @@
 This repository hosts the french sources that are installable directly through the Paperback application.
 
 ## Available Sources
+
 |       Name        |               URL               |                       Status                        |
 | :---------------: | :-----------------------------: |:---------------------------------------------------:|
 | Astral Manga      | https://astral-manga.fr/        | ✅                                                  |

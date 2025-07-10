@@ -52,4 +52,36 @@ export class HentaiOrigines extends Madara {
         { default: "Pas de contenus pour adulte", new: "Aucun contenu pour adulte" },
         { default: "Seulement du contenus pour adulte", new: "Seulement du contenu pour adulte" }
     ]
+    // Méthode modifiée pour gérer le base64 dans getIntMangaId
+    override async getIntMangaId(mangaId: string) {
+        const request = App.createRequest({
+            url: `${this.base_url}/${this.source_path}/${mangaId}`,
+            method: 'GET'
+        });
+
+        const response = await this.requestManager.schedule(request, 1);
+        this.CloudFlareError(response.status);
+
+        const $ = this.cheerio.load(response.data);
+
+        // Extraire le contenu base64 du script
+        const base64Script = $('script#wp-manga-js-extra').attr('src')?.split(',')[1];
+
+        if (!base64Script) {
+            throw new Error("Impossible de trouver le script encodé en base64");
+        }
+
+        // Décoder le contenu base64
+        const decodedScript = Buffer.from(base64Script, 'base64').toString('utf-8');
+
+        // Extraire manga_id du script décodé
+        const mangaIdMatch = decodedScript.match(/"manga_id":"(\d*)"/);
+
+        if (!mangaIdMatch) {
+            throw new Error("manga_id non trouvé dans le script décodé");
+        }
+
+        // Retourner l'ID du manga
+        return mangaIdMatch[1];
+    }
 }

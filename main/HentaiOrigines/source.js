@@ -18959,7 +18959,7 @@ exports.HentaiOriginesInfo = {
 class HentaiOrigines extends base_1.Madara {
     base_url = DOMAIN;
     lang_code = exports.HentaiOriginesInfo.language;
-    source_path = "oeuvre";
+    source_path = "manga";
     alt_ajax = true;
     cloudflare_domain = false;
     description_selector = ".summary__content p";

@@ -34,7 +34,7 @@ export const HentaiOriginesInfo: SourceInfo = {
 export class HentaiOrigines extends Madara {
     base_url = DOMAIN
     lang_code = HentaiOriginesInfo.language!
-    override source_path: string = "oeuvre"
+    override source_path: string = "manga"
     override alt_ajax: boolean = true
     override cloudflare_domain: boolean = false
     override description_selector: string = ".summary__content p"

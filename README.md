@@ -2,11 +2,11 @@
 
 ### Add this repository to the app
 
-On a Paperback installed device, press [base URL](https://ulrichstern8888.github.io/Paperback/main) to add this repository to the app.
+On a Paperback installed device, press [base URL](https://ulrichstern8888.github.io/paperback/main) to add this repository to the app.
 
 #### Base URL :
 ```
-https://ulrichstern8888.github.io/Paperback/main
+https://ulrichstern8888.github.io/paperback/main
 ```
 
 ### List of sources in this repo
